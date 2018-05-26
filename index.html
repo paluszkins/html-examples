@@ -99,15 +99,35 @@
             </tr>
         </tfoot>
     </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
     <!--  Formularze  -->
     <form action="" method="POST">
-        <input type="text" name="name"><br>
-        <input type="email" name="email"><br>
-        <input type="number" name="quantity"><br>
-        <input type="checkbox" name="agreement"><br>
-        <input type="radio" name="gender">Kobieta<br>
-        <input type="radio" name="gender">Mężczyzna<br>
+       <label for="user-name">Imię:</label>
+        <input id="user-name" type="text" name="name" placeholder='Imię'><br>
+        
+        <input type="email" name="email" disabled><br>
+        <input type="number" name="quantity" value=2><br>
+        
+        <input id="agreement" type="checkbox" name="agreement" required>
+        <label for="agreement">Wyrażam zgodę na ....</label><br>
+        
+        <label><input type="radio" name="gender">Kobieta</label><br>
+        <label><input type="radio" name="gender">Mężczyzna</label><br>
+        
+        <select name="cities" tabindex=2>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Wrocław">Wrocław</option>
+        </select><br><br>
+        
+        <textarea name="message" tabindex=1></textarea><br>
         <input type="submit" value="Wyślij formularz">
     </form>
 </body>
